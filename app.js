@@ -3,8 +3,8 @@ const {add} = require('./helpers/post');
 const tPost = {
 	author: 'Artem',
 	defs: {
-		main1: 'main1',
-		main2: 'main2'
+		log: 'log.txt',
+		cache: '7869vfvd-fsdf9s89f'
 	}
 };
 
