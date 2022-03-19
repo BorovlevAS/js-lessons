@@ -7,17 +7,18 @@ const tPost = {
 };
 
 const fnAddPost = (tPost, sMessage, dateAdd = Date()) => {
-	const newPost = {
-		...tPost,
-		message: sMessage,
-		dateAdd
-	}
 	
+	const newPost = JSON.parse(JSON.stringify(tPost));
+	
+	newPost.message = sMessage;
+	newPost.dateAdd = dateAdd;
 	newPost.defs.main1 = 'Here';
 	
 	return newPost;
 }
 const aPost = fnAddPost(tPost, 'Hi there!');
 
+console.log('NEW POST:');
 console.log(aPost);
+console.log('SRC POST:');
 console.log(tPost);
