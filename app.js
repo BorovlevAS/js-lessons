@@ -1,3 +1,5 @@
+const {add} = require('./helpers/post');
+
 const tPost = {
 	author: 'Artem',
 	defs: {
@@ -22,3 +24,5 @@ console.log('NEW POST:');
 console.log(aPost);
 console.log('SRC POST:');
 console.log(tPost);
+
+console.log(add(10, 20));
